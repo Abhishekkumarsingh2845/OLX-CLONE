@@ -4,7 +4,7 @@ import React from 'react'
 const Whislist = () => {
   return (
     <View>
-   =<View style={{ backgroundColor: 'lightblue', padding: 20 }}>
+   <View style={{ backgroundColor: 'lightblue', padding: 20 }}>
       <Text style={{ fontSize: 20, fontWeight: 'bold' }}>whlist</Text>
     </View>
     </View>
