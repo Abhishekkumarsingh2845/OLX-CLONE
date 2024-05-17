@@ -80,6 +80,7 @@ const Add = () => {
       <TextInput
         placeholder="Enter Item Desc"
         placeholderTextColor="black"
+
         style={styles.xx}
         value={desc}
         onChangeText={txt=>setdesc(txt)}
@@ -139,6 +140,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginTop: 20,
     paddingLeft: 20,
+    color:'black',
   },
   blueButton: {
     backgroundColor: 'blue',
