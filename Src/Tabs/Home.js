@@ -57,8 +57,22 @@ const Home = () => {
       <Text style={styles.aa}>Posted Item</Text>
       <FlatList
         data={[1, 1, 1, 1, 1]}
-        renderItem={({item,index}) => {
-          return <TouchableOpacity style={styles.i}></TouchableOpacity>;
+        renderItem={({item, index}) => {
+          return (
+            <TouchableOpacity style={styles.i}>
+              <Image
+                source={require('../images/avatar.png')}
+                style={styles.img}
+              />
+              <View style={{ flexDirection: 'column',
+   alignItems:'center'}}>
+              
+                <Text style={styles.tx1}>{'$7000'}</Text>
+                <Text style={styles.tx1}>{'Iphone Pro Max'}</Text>
+               
+              </View>
+            </TouchableOpacity>
+          );
         }}
       />
     </View>
@@ -126,17 +140,31 @@ const styles = StyleSheet.create({
     color: 'black',
     fontWeight: 'bold',
     marginRight: 179,
-    marginTop:1,
+    marginTop: 1,
     textAlign: 'center',
   },
   i: {
     width: '90%',
-    height:100,
-    backgroundColor:"#fff",
-    alignSelf:'center',
-    marginTop:10,
-
+    height: 100,
+    backgroundColor: '#fff',
+    alignSelf: 'center',
+    marginTop: 10,
+   
   },
+  img: {
+    width: '90%',
+    height: '90%',
+    resizeMode: 'contain',
+   marginLeft:-91,
+  
+  },
+  tx1: 
+  {
+    fontSize:14,
+    color:'black',
+    marginTop:-44,
+    marginLeft:-51,
+  }
 });
 
 export default Home;
